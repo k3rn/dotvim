@@ -72,3 +72,12 @@ function! s:CloseIfOnlyNerdTreeLeft()
 		endif
 	endif
 endfunction
+" Change the CWD to the NERDTree root
+let g:NERDTreeChDirMode=2
+
+" Set the textwidth to 80 and draw a line 2 collumns before it.
+set tw=80  
+set cc=-2
+
+" Show 3 lines around the cursor
+set scrolloff=3
