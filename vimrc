@@ -18,6 +18,11 @@ Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 Plugin 'a.vim'
 Plugin 'iptables'
+Plugin 'mhinz/vim-signify'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'b4winckler/vim-objc'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 call vundle#end()
 
