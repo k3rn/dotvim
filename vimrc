@@ -14,9 +14,10 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'dag/vim-fish'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'fatih/vim-go'
-Plugin 'darekwyatt/vim-fswitch'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
+Plugin 'a.vim'
+Plugin 'iptables'
 
 call vundle#end()
 
@@ -43,3 +44,6 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'sol'
 set t_Co=256
+
+" Set filetype to iptables on files ending with v4 , v6 or iptables
+au! BufNewFile,BufRead *.v4,*.v6,*.iptables setf iptables
