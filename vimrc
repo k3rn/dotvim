@@ -81,3 +81,13 @@ set cc=-2
 
 " Show 3 lines around the cursor
 set scrolloff=3
+
+" Set Leader to ,
+let g:mapleader = ','
+
+" Syntastic options
+nnoremap <Leader>si :SyntasticInfo<CR>
+nnoremap <Leader>s :SyntasticCheck<CR>
+nnoremap <Leader>se :SyntasticCheck <CR> :Errors<CR>
+nnoremap <Leader>sc :lclose<CR>
+let g:syntastic_sh_checkers = ['shellcheck']
