@@ -22,7 +22,6 @@ Plugin 'mhinz/vim-signify'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'b4winckler/vim-objc'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/syntastic'
 Plugin 'ynkdir/vim-vimlparser'
 Plugin 'syngan/vim-vimlint'
@@ -56,9 +55,20 @@ set t_Co=256
 " Set filetype to iptables on files ending with v4 , v6 or iptables
 au! BufNewFile,BufRead *.v4,*.v6,*.iptables setf iptables
 
-" 
+" backspace like others apps 
 set backspace=indent,eol,start
 
 " the right tab width
 set tabstop=4
 set shiftwidth=4
+
+" Close the window if only buffer that's is left is the NERDTRee buffer
+function! s:CloseIfOnlyNerdTreeLeft()
+	if exists("t:NERDTreeBufName")
+		if bufwinnr(t:NERDTreeBufNAme) != -1
+			if winnr("$") == 1
+				q
+			endif
+		endif
+	endif
+endfunction
