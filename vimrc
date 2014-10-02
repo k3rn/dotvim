@@ -23,6 +23,9 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'b4winckler/vim-objc'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'scrooloose/syntastic'
+Plugin 'ynkdir/vim-vimlparser'
+Plugin 'syngan/vim-vimlint'
 
 call vundle#end()
 
@@ -52,3 +55,10 @@ set t_Co=256
 
 " Set filetype to iptables on files ending with v4 , v6 or iptables
 au! BufNewFile,BufRead *.v4,*.v6,*.iptables setf iptables
+
+" 
+set backspace=indent,eol,start
+
+" the right tab width
+set tabstop=4
+set shiftwidth=4
