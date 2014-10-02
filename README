@@ -1,0 +1,29 @@
+My vim configuration. It includes de following plugins:
+
+Vundle.vim 
+louver.vim
+ctrlp.vim
+ack.vim
+nerdtree
+delimitMate
+vim-fish
+vim-ansible-yaml
+vim-go
+vim-surround
+vim-airline
+a.vim
+iptables
+vim-signify
+tmuxline.vim
+vim-objc
+tcomment_vim
+syntastic
+vim-vimlparser
+vim-vimlint
+
+Clone this repo:
+	$ git clone --recursive https://github.com/k3rn/dotvim.git ~/.vim
+Link the vimrc to your home:
+	$ ln -s ~/.vim/vimrc ~/.vimrc
+Install the plugins:
+	$ vim +PluginInstall +qall
