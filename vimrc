@@ -91,3 +91,4 @@ nnoremap <Leader>s :SyntasticCheck<CR>
 nnoremap <Leader>se :SyntasticCheck <CR> :Errors<CR>
 nnoremap <Leader>sc :lclose<CR>
 let g:syntastic_sh_checkers = ['shellcheck']
+let g:syntastic_c_checkers = ['clang']
