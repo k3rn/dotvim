@@ -25,6 +25,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ynkdir/vim-vimlparser'
 Plugin 'syngan/vim-vimlint'
+Plugin 'jmcantrell/vim-virtualenv'
 
 call vundle#end()
 
@@ -50,6 +51,7 @@ endif
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'sol'
+let g:airline#extensions#virtualenv#enabled = 1
 set t_Co=256
 
 " Set filetype to iptables on files ending with v4 , v6 or iptables
@@ -92,3 +94,4 @@ nnoremap <Leader>se :SyntasticCheck <CR> :Errors<CR>
 nnoremap <Leader>sc :lclose<CR>
 let g:syntastic_sh_checkers = ['shellcheck']
 let g:syntastic_c_checkers = ['clang']
+let g:syntastic_python_checkers = ['python', 'pep8']
