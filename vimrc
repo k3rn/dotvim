@@ -57,7 +57,7 @@ set t_Co=256
 " Set filetype to iptables on files ending with v4 , v6 or iptables
 au! BufNewFile,BufRead *.v4,*.v6,*.iptables setf iptables
 
-" backspace like others apps 
+" backspace like others apps
 set backspace=indent,eol,start
 
 " the right tab width
@@ -78,7 +78,7 @@ endfunction
 let g:NERDTreeChDirMode=2
 
 " Set the textwidth to 80 and draw a line 2 collumns before it.
-set tw=80  
+set tw=80
 set cc=-2
 
 " Show 3 lines around the cursor
@@ -86,6 +86,9 @@ set scrolloff=3
 
 " Set Leader to ,
 let g:mapleader = ','
+
+" Remove trailing whitespace before saving a file
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Syntastic options
 nnoremap <Leader>si :SyntasticInfo<CR>
