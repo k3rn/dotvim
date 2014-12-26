@@ -26,6 +26,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ynkdir/vim-vimlparser'
 Plugin 'syngan/vim-vimlint'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
@@ -33,7 +34,8 @@ filetype plugin indent on
 " End bundle setup
 
 syntax on
-colorscheme louver
+colorscheme solarized
+set background=light
 
 " Show line numer
 set number
@@ -50,7 +52,7 @@ endif
 " Configure airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'sol'
+let g:airline_theme = 'solarized'
 let g:airline#extensions#virtualenv#enabled = 1
 set t_Co=256
 
