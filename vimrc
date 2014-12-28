@@ -27,6 +27,7 @@ Plugin 'ynkdir/vim-vimlparser'
 Plugin 'syngan/vim-vimlint'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 
@@ -100,3 +101,7 @@ nnoremap <Leader>sc :lclose<CR>
 let g:syntastic_sh_checkers = ['shellcheck']
 let g:syntastic_c_checkers = ['clang']
 let g:syntastic_python_checkers = ['python', 'pep8']
+
+" indentLine configuration
+let g:indentLine_char = "│"
+let g:indentLine_color_term = 253
