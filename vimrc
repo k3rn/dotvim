@@ -28,6 +28,7 @@ Plugin 'syngan/vim-vimlint'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Yggdroot/indentLine'
+Plugin 'jinja'
 
 call vundle#end()
 
@@ -68,15 +69,7 @@ set tabstop=4
 set shiftwidth=4
 
 " Close the window if only buffer that's is left is the NERDTRee buffer
-function! s:CloseIfOnlyNerdTreeLeft()
-	if exists("t:NERDTreeBufName")
-		if bufwinnr(t:NERDTreeBufNAme) != -1
-			if winnr("$") == 1
-				q
-			endif
-		endif
-	endif
-endfunction
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " Change the CWD to the NERDTree root
 let g:NERDTreeChDirMode=2
 
