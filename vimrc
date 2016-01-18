@@ -72,7 +72,7 @@ set tabstop=4
 set shiftwidth=4
 
 " Close the window if only buffer that's is left is the NERDTRee buffer
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Change the CWD to the NERDTree root
 let g:NERDTreeChDirMode=2
 
