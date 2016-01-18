@@ -1,5 +1,5 @@
 source $HOME/.vimrc
-set guifont=Mensch\ Regular\ for\ Powerline\ for\ Powerline:h11
+set guifont=Hack:h11
 set antialias
 set guioptions-=T
 set guioptions-=r
