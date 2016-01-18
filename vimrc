@@ -29,6 +29,9 @@ Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jinja'
+Plugin 'aperezdc/vim-template'
+Plugin 'tpope/vim-fugitive'
+Plugin 'junegunn/gv.vim'
 
 call vundle#end()
 
