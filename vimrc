@@ -32,6 +32,7 @@ Plugin 'jinja'
 Plugin 'aperezdc/vim-template'
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/gv.vim'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()
 
