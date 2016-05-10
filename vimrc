@@ -33,6 +33,10 @@ Plugin 'aperezdc/vim-template'
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/gv.vim'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'k3rn/vim-pudb'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'tmhedberg/SimpylFold'
 
 call vundle#end()
 
@@ -40,7 +44,7 @@ filetype plugin indent on
 " End bundle setup
 
 syntax on
-colorscheme solarized
+colorscheme PaperColor
 set background=light
 
 " Show line numer
@@ -58,7 +62,7 @@ endif
 " Configure airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'papercolor'
 let g:airline#extensions#virtualenv#enabled = 1
 set t_Co=256
 
