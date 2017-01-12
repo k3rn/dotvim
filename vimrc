@@ -37,6 +37,8 @@ Plugin 'k3rn/vim-pudb'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
