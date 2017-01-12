@@ -114,7 +114,8 @@ nnoremap <Leader>se :SyntasticCheck <CR> :Errors<CR>
 nnoremap <Leader>sc :lclose<CR>
 let g:syntastic_sh_checkers = ['shellcheck']
 let g:syntastic_c_checkers = ['clang']
-let g:syntastic_python_checkers = ['python', 'pep8']
+let g:syntastic_python_checkers = ['python', 'pep8', 'pylint']
+let g:syntastic_python_pylint_post_args = '--msg-template="{path}:{line}:{column}:{C}: [{symbol} {msg_id}] {msg}"'
 
 " indentLine configuration
 let g:indentLine_char = "│"
