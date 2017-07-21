@@ -38,7 +38,9 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'Valloric/YouCompleteMe'
+if has("macunix")
+	Plugin 'Valloric/YouCompleteMe'
+endif
 
 call vundle#end()
 
