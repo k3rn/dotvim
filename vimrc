@@ -129,3 +129,4 @@ let g:ctrlp_working_path_mode = 'c'
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_python_binary_path = 'python'
