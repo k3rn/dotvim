@@ -5,7 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim' " Inception
+Plugin 'VundleVim/vundle.vim' " Inception
 Plugin 'vim-scripts/louver.vim'
 Plugin 'junegunn/fzf.vim'
 Plugin 'rking/ag.vim'
