@@ -7,8 +7,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim' " Inception
 Plugin 'vim-scripts/louver.vim'
-Plugin 'mileszs/ack.vim'
 Plugin 'junegunn/fzf.vim'
+Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Raimondi/delimitMate'
 Plugin 'sheerun/vim-polyglot'
