@@ -7,8 +7,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim' " Inception
 Plugin 'vim-scripts/louver.vim'
-Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Raimondi/delimitMate'
 Plugin 'sheerun/vim-polyglot'
@@ -42,6 +42,7 @@ call vundle#end()
 filetype plugin indent on
 " End bundle setup
 
+set rtp+=~/homebrew/opt/fzf
 syntax on
 colorscheme PaperColor
 set background=light
@@ -118,10 +119,10 @@ let g:syntastic_python_pylint_post_args = '--msg-template="{path}:{line}:{column
 let g:indentLine_char = "│"
 let g:indentLine_color_term = 253
 
-" CtrlP configuration
-let g:ctrlp_working_path_mode = 'c'
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_python_binary_path = 'python'
+nmap ; :Buffers<CR>
+nmap <C-P> :Files<CR>
