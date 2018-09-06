@@ -19,7 +19,7 @@ Plugin 'iptables'
 Plugin 'mhinz/vim-signify'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
 Plugin 'syngan/vim-vimlint'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'altercation/vim-colors-solarized'
@@ -75,6 +75,7 @@ let g:airline#extensions#virtualenv#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#buffer_min_count =2
+let g:airline#extensions#ale#enabled = 2
 set t_Co=256
 
 " Set filetype to iptables on files ending with v4 , v6 or iptables
@@ -105,15 +106,6 @@ let g:mapleader = ','
 " Remove trailing whitespace before saving a file
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Syntastic options
-nnoremap <Leader>si :SyntasticInfo<CR>
-nnoremap <Leader>s :SyntasticCheck<CR>
-nnoremap <Leader>se :SyntasticCheck <CR> :Errors<CR>
-nnoremap <Leader>sc :lclose<CR>
-let g:syntastic_sh_checkers = ['shellcheck']
-let g:syntastic_c_checkers = ['clang']
-let g:syntastic_python_checkers = ['python', 'pep8', 'pylint']
-let g:syntastic_python_pylint_post_args = '--msg-template="{path}:{line}:{column}:{C}: [{symbol} {msg_id}] {msg}"'
 
 " indentLine configuration
 let g:indentLine_char = "│"
