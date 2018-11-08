@@ -8,7 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/vundle.vim' " Inception
 Plugin 'vim-scripts/louver.vim'
 Plugin 'junegunn/fzf.vim'
-Plugin 'rking/ag.vim'
+Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Raimondi/delimitMate'
 Plugin 'sheerun/vim-polyglot'
@@ -107,3 +107,6 @@ let g:indentLine_color_term = 253
 " fzf config
 nmap ; :Buffers<CR>
 nmap <C-P> :Files<CR>
+
+" Tell the ack plugin to use the silver searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
