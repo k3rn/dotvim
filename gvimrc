@@ -14,3 +14,6 @@ fun! Buildwiki()
 endfun
 
 noremap <Leader>w :call Buildwiki()<CR>
+
+" Disable ALE on MacVim
+let g:ale_enabled = 0
