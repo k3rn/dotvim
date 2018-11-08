@@ -107,6 +107,7 @@ let g:indentLine_color_term = 253
 " fzf config
 nmap ; :Buffers<CR>
 nmap <C-P> :Files<CR>
-
+" Set the path to the ALE textlint configuration
+let g:ale_textlint_options = "-c ~/.textlinrc"
 " Tell the ack plugin to use the silver searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
