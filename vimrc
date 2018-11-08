@@ -21,7 +21,6 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'w0rp/ale'
 Plugin 'syngan/vim-vimlint'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'Yggdroot/indentLine'
 Plugin 'aperezdc/vim-template'
 Plugin 'tpope/vim-fugitive'
@@ -31,10 +30,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'jistr/vim-nerdtree-tabs'
-if has("macunix")
-	Plugin 'Valloric/YouCompleteMe'
-endif
-
 call vundle#end()
 
 filetype plugin indent on
@@ -109,10 +104,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 let g:indentLine_char = "│"
 let g:indentLine_color_term = 253
 
-
-" YouCompleteMe
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-let g:ycm_python_binary_path = 'python'
+" fzf config
 nmap ; :Buffers<CR>
 nmap <C-P> :Files<CR>
