@@ -27,18 +27,19 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/gv.vim'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'morhetz/gruvbox'
 call vundle#end()
 
 filetype plugin indent on
 " End bundle setup
 
-set rtp+=~/homebrew/opt/fzf
+set rtp+=~/usr/bin/fzf
 syntax on
-colorscheme PaperColor
+colorscheme gruvbox
 set background=light
+set termguicolors
 
 " Show line numer
 set number
@@ -63,7 +64,7 @@ endif
 " Configure airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'papercolor'
+let g:airline_theme = 'gruvbox'
 let g:airline#extensions#virtualenv#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
