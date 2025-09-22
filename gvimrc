@@ -1,5 +1,5 @@
-source $HOME/.vimrc
-set guifont=Hack:h11
+source $HOME/.vim/vimrc
+# set guifont=BlexMono Nerd Font::h11
 set antialias
 set guioptions-=T
 set guioptions-=r
